@@ -1,0 +1,92 @@
+/* root */
+:root {
+    --clr-primary-Green: #c5f82a;
+    
+    --clr-neutral-White: #ffffff;
+    --clr-neutral-Grey: #333333;
+    --clr-neutral-Dark-Grey: #1f1f1f;
+    --clr-neutral-Off-Black: #141414;
+
+    --ff: 'Inter', sans-serif;
+    --fs-body: .875rem;
+    --fs-heading: 1.375rem;
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+/* reset 
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    */
+
+h1 {
+    line-height: 1.1;
+}
+    
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+a {
+    color: var(--clr-neutral-White);
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--ff);
+    font-weight: var(--fw-400);
+    font-size: var(--fs-body);
+    text-align: center;
+    color: var(--clr-neutral-White);
+    background: var(--clr-neutral-Off-Black);
+}
+
+/* text styles */
+.user-name {
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-600);
+    margin-bottom: .5rem;
+}
+
+.user-location {
+    color: var(--clr-primary-Green);
+    font-weight: var(--fw-600);
+    margin-bottom: 1.25rem;
+}
+
+/* layout styles */
+.wrapper {
+    place-items: center;
+    min-height: 100dvh;
+}
+
+div.scroll-container {
+    background-color: black;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+/* general styles 
+.user-image {
+   width: 6em;
+   margin-bottom: 1.5rem;
+   border-radius: 50%;
+}
+   */
+
+/* Media Queries 
+@media screen and (max-width: 440px) {
+    .profile-container {
+        width: 80%;
+    }
+    
+}
+    
